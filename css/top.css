@@ -1,5 +1,6 @@
 #places {
-  margin: 10px;
+  width: calc(100% - 2%);
+  margin: 1% 1% 1% 1%;
   position: relative;
   box-sizing: border-box;
 }
