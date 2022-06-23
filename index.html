@@ -10,7 +10,7 @@
     <title>Одесса.</title>
   </head>
   <body>
-    <section class="main">
+    <section id="main">
       <div class="header">
         <div class="logo">
           <div class="logofront">
@@ -19,15 +19,13 @@
           <div class="logoback"><img src="./img/logo.png" alt="logo2" /></div>
         </div>
         <nav class="maine-menu">
-          <ul class="nav">
-            <li><a href="#">Меню</a></li>
+          <a href="#" class="menu-btn">Меню</a>
+          <ul class="menu-nav">
             <li><a class="menu" href="index.html">Главная</a></li>
             <li><a href="./Html/history.html">История</a></li>
             <li>
               <a href="./Html/top.html">Знаменитые места</a>
             </li>
-            <li><a href="">Сейчас</a></li>
-            <li><a href="">Контакты</a></li>
           </ul>
         </nav>
         <nav class="hamburger">
@@ -38,8 +36,6 @@
             <li>
               <a href="./Html/top.html">Знаменитые места</a>
             </li>
-            <li><a href="">Сейчас</a></li>
-            <li><a href="">Контакты</a></li>
           </ul>
         </nav>
       </div>
@@ -180,6 +176,7 @@
         </div>
       </div>
     </section>
+    <div id="back-top"><a href="#main"></a></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="./js/script.js"></script>
   </body>

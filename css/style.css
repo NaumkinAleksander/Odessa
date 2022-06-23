@@ -20,7 +20,7 @@ body {
 
 /* ----header---- */
 
-.main {
+#main {
   width: calc(100% - 2%);
   background-image: url(../img/Odessa.jpg);
   background-position: center;
@@ -86,43 +86,55 @@ body {
 /*--Menu-desctop--*/
 
 .maine-menu {
-  height: 20px;
+  height: 30px;
   margin: 1%;
   display: flex;
   flex-direction: column;
   position: relative;
   width: auto;
   list-style: none;
-  overflow: hidden;
 }
 
-.maine-menu:hover {
-  overflow: visible;
+.menu-nav {
+  width: 200px;
+  height: 150px;
+  transition: 0.1s;
+  transform: scaleY(0) translateY(0%);
+  transform-origin: center top;
+  visibility: visible;
+  opacity: 1;
+  position: absolute;
+  top: 90%;
+}
+
+.menu-nav_active {
+  transform: scaleY(1) translateY(0%);
+  opacity: 1;
+  visibility: visible;
+}
+
+.maine-menu a {
+  padding: 2px;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
 }
 
 .maine-menu li .menu {
-  text-decoration: underline red;
+  text-decoration: underline palevioletred;
 }
 
 .maine-menu li {
   display: flex;
   justify-content: flex-start;
-  font-size: 1.4em;
-  font-weight: bold;
   color: white;
-}
-
-.maine-menu li a {
-  padding: 2px;
-  color: white;
-  text-decoration: none;
 }
 
 .maine-menu li a:hover {
-  border: 1px solid silver;
+  background-color: rgba(196, 196, 196, 0.5);
   border-radius: 10px;
-  box-shadow: -2px 2px 10px white, -2px -2px 10px white, 2px 2px 10px white,
-    2px -2px 10px white;
+  box-shadow: 0 0 10px whitesmoke;
 }
 
 /*--Hamburger--*/
@@ -193,6 +205,11 @@ h1 {
 
   .hamburger-nav {
     width: 200px;
+    height: auto;
+    background-color: rgba(50, 106, 180, 0.5);
+    box-shadow: 0 0 15px silver;
+    border-radius: 12px;
+    padding-left: 5px;
     transition: 0.2s;
     transform: scaleX(0) translateX(0%);
     transform-origin: center left;
@@ -211,26 +228,22 @@ h1 {
 
   .hamburger-nav li {
     margin: 5px 0px;
-    font-size: 1.2em;
+    font-size: 1.1em;
     font-weight: bold;
     list-style: none;
   }
 
   .hamburger-nav li .menu {
-    text-decoration: underline red;
+    text-decoration: underline palevioletred;
   }
 
   .hamburger-nav a {
-    padding: 0px 6px;
-    border: 1px solid blue;
-    border-radius: 12px;
-    background-color: rgb(233, 231, 230);
-    color: black;
+    color: whitesmoke;
     text-decoration: none;
   }
 
   .hamburger-nav a:hover {
-    box-shadow: 0px 0px 20px blue;
+    color: silver;
   }
 
   h1 {
