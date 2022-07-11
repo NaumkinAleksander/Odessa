@@ -21,20 +21,20 @@
         <nav class="maine-menu">
           <a href="#" class="menu-btn">Меню</a>
           <ul class="menu-nav">
-            <li><a class="menu" href="../index.html">Главная</a></li>
+            <li><a href="../index.html">Главная</a></li>
             <li><a href="./history.html">История</a></li>
             <li>
-              <a href="./top.html">Знаменитые места</a>
+              <a class="menu" href="./top.html">Знаменитые места</a>
             </li>
           </ul>
         </nav>
         <nav class="hamburger">
           <a href="#" class="hamburger-btn"></a>
           <ul class="hamburger-nav">
-            <li><a class="menu" href="../index.html">Главная</a></li>
+            <li><a href="../index.html">Главная</a></li>
             <li><a href="./history.html">История</a></li>
             <li>
-              <a href="./top.html">Знаменитые места</a>
+              <a class="menu" href="./top.html">Знаменитые места</a>
             </li>
           </ul>
         </nav>
@@ -776,8 +776,13 @@
         <img src="../img/morvokzal.jpg" alt="" />
       </div>
     </section>
+    <div id="map" class="top"></div>
     <div id="back-top"><a href="#main"></a></div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBuI0yZ_jBYJQTioWgnujnVt5kzus8O-30&callback=initMap&v=weekly"
+      defer
+    ></script>
     <script type="text/javascript" src="../js/script.js"></script>
   </body>
 </html>

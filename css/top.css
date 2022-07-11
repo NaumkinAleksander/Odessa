@@ -1,6 +1,7 @@
-#places {
+#places,
+#map {
   width: calc(100% - 2%);
-  margin: 1% 1% 1% 1%;
+  margin: 1%;
   position: relative;
   box-sizing: border-box;
 }
@@ -64,6 +65,10 @@
   width: 40px;
   height: 40px;
   border-radius: 50%;
+}
+
+#map {
+  height: 500px;
 }
 
 @media screen and (min-width: 350px) and (max-width: 699px) {
